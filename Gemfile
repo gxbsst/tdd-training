@@ -41,4 +41,5 @@ group :test do
   gem 'rspec-rails', :platforms => [:ruby]
   gem 'mongoid-rspec', '~> 1.11.0', :platforms => [:ruby]
   gem 'spork-rails', :platforms => [:ruby]
+  gem 'database_cleaner', '1.0.1', :platforms => [:ruby]
 end

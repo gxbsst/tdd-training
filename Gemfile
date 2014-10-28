@@ -39,4 +39,6 @@ gem 'jquery-rails'
 
 group :test do 
   gem 'rspec-rails', :platforms => [:ruby]
+  gem 'mongoid-rspec', '~> 1.11.0', :platforms => [:ruby]
+  gem 'spork-rails', :platforms => [:ruby]
 end

@@ -9,12 +9,12 @@ FactoryGirl.define do
     cover_url "#"
     released_at Time.now
 
-    after(:create) do |course|
-      create_list :character, 3, course: course
-    end
-
-    trait :type_is_nil do
-      type ''
-    end
+    # after(:create) do |course|
+    #   create_list :character, 3, course: course
+    # end
+    #
+    # trait :type_is_nil do
+    #   type ''
+    # end
   end
 end

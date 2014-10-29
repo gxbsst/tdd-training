@@ -31,6 +31,8 @@ Spork.prefork do
     config.render_views = true
     config.infer_spec_type_from_file_location!
     config.include Mongoid::Matchers, type: :model
+
+    config.include FactoryGirl::Syntax::Methods
   end
 end
 

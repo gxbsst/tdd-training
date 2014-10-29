@@ -6,12 +6,15 @@ gem "mongoid"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-
+gem 'bootflat-rails'
+gem 'bootstrap_form', :git => 'https://github.com/bootstrap-ruby/rails-bootstrap-forms.git',  :tag => 'v1.0.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
+gem 'sass', '3.4.5'
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+ gem 'sass-rails',   '~> 3.2.3'
+# gem 'sass-rails', '~> 5.0.0.beta1'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -42,4 +45,8 @@ group :test do
   gem 'mongoid-rspec', '~> 1.11.0', :platforms => [:ruby]
   gem 'spork-rails', :platforms => [:ruby]
   gem 'database_cleaner', '1.0.1', :platforms => [:ruby]
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
 end

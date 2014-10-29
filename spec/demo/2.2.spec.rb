@@ -13,7 +13,6 @@ class User
     false
   end
  end
-
 end
 
 describe "Rsepc Methods" do 
